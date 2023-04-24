@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💙¿QUIERES SER MI NOVIX?🧡</title>
+    <style>
+.body {
+
+    background-color: brown;
+    text-align: center;
+}
+.body__title {
+color: aliceblue;
+}
+.body_img
+{
+
+    width: 100%;
+    border-radius: 55%;
+
+}
+
+    </style>
+
+
+</head>
+<body class="body">
+    <h1 class="body__title">🧡¿QUIERES SER MI NOVIX?💙</h1>
+    <img src="https://s.t13.cl/sites/default/files/styles/manualcrop_850x475/public/t13/field-imagen/2023-04/bowser.jpg.jpeg?itok=SrvFWrpe" alt="Foto de mi"/>
+    <button id="YES">🍄SI QUIERO🍄</button>
+    <button id="NO">🐢NO QUIERO🐢</button>
+    <script>
+ const vutonSI = document.getElementById ("YES");
+ const vutonNO = document.getElementById ("NO");
+ const SOMOSNOVIOS = () =>{
+    alert("💕SOMOS NOVIOS💕");
+    alert("🙈NUESTRA BODA ES MAÑANA🙈");
+    location.href = "https://www.youtube.com/watch?v=BWZsP6nc8Fs";
+   }
+   const evitarqueserompamicorazon = () => {
+    vutonNO.style.position = "absolute";
+    vutonNO.style.top = (Math.random() * window.innerHeight) + "px";
+    vutonNO.style.left = (Math.random() * window.innerWidth) + "px";
+   }
+
+   vutonSI.addEventListener("click", SOMOSNOVIOS);
+   vutonNO.addEventListener("mouseover", evitarqueserompamicorazon);
+</script>
+</body>
+</html>
